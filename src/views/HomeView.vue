@@ -19,17 +19,33 @@ export default defineComponent({
   main {
     width: 100vw;
     height: 100vh;
-    background-color: #040018;
+    background: linear-gradient(90deg, rgba(1,0,19,1) 0%, rgba(17,17,157,1) 38%, rgba(16,173,255,1) 100%);
     color: #FEFEFE;
   }
 
   .header-main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.9375rem 1.125rem;
   }
 
   .header__button {
-    
+    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 4px );
+    background: rgba( 255, 255, 255, 0.45 );
+    border-radius: 0.9375rem;
+    border: none;
+    box-shadow: 0 3px 15px 0 rgba(39, 42, 90, 0.37);
+    color: #040018;
+    cursor: pointer;
+    outline: inherit;
+    padding: 1rem;
+    transition: background 0.4s ease-in;
+  }
+
+  .header__button:hover {
+    background: rgba( 255, 255, 255, 0.50 );
+    color: #040114;
   }
 </style>
