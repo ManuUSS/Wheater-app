@@ -1,7 +1,7 @@
 <script lang="ts" src='./CardWeather.ts'/>
 
 <template>
-  <div class="card card--glass ">
+  <div class="card card--glass card--weather">
     <div>
         <h4>Nombre del lugar</h4>
         <p>Estado del clima</p>
@@ -9,7 +9,7 @@
     <div>
         <h5>Image</h5>
     </div>
-    <div>
+    <div class="card--weather__timestamp">
         <h1>Precip</h1>
         <h1>Temp</h1>
         <h1>Viento</h1>
@@ -17,6 +17,19 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
+    .card--weather {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 0.5rem;
+    }
+
+    .card--weather__timestamp {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;    
+    }
 </style>
