@@ -11,4 +11,13 @@
   margin: 0;
   font-family: 'Signika Negative', sans-serif;
 }
+
+.card.card--glass {
+    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 4px );
+    background: rgba( 255, 255, 255, 0.45 );
+    border-radius: 0.9375rem;
+    border: none;
+    box-shadow: 0 3px 15px 0 rgba(39, 42, 90, 0.37);
+}
 </style>

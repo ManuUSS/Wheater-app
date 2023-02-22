@@ -4,14 +4,22 @@
       <h1>Manu's Weather App</h1>
       <button class="header__button">Explore weather</button> 
     </div>
+    <article>
+      <CardWeather />
+    </article>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import CardWeather from '@/components/CardWeather.vue';
+
 
 export default defineComponent({
-  name: 'HomeView'
+  name: 'HomeView',
+  components: {
+    CardWeather
+  }
 });
 </script>
 
