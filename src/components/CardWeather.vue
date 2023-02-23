@@ -7,7 +7,7 @@
         <p>Estado del clima</p>
     </div>
     <div>
-        <h5>Image</h5>
+        <img src="./icons/rainy.svg" alt="rainy" />
     </div>
     <div class="card--weather__timestamp">
         <h1>Precip</h1>
