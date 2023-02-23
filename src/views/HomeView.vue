@@ -30,7 +30,7 @@ export default defineComponent({
   main {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(90deg, rgba(1,0,19,1) 0%, rgba(17,17,157,1) 38%, rgba(16,173,255,1) 100%);
+    background: linear-gradient(90deg, rgba(1,0,19,1) 0%, rgba(28,28,84,1) 100%);
     color: #FEFEFE;
   }
 
