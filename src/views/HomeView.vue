@@ -4,9 +4,9 @@
       <h1>Manu's Weather App</h1>
       <button class="header__button">Explore weather</button> 
     </div>
-    <article>
+    <div class="wrapper-cards">
       <CardWeather />
-    </article>
+    </div>
   </main>
 </template>
 
@@ -56,4 +56,12 @@ export default defineComponent({
     background: rgba( 255, 255, 255, 0.50 );
     color: #040114;
   }
+
+  .wrapper-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
 </style>

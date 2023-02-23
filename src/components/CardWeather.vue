@@ -1,7 +1,7 @@
 <script lang="ts" src='./CardWeather.ts'/>
 
 <template>
-  <div class="card card--glass card--weather">
+  <article class="card card--glass card--weather">
     <div>
         <h4>Nombre del lugar</h4>
         <p>Estado del clima</p>
@@ -14,7 +14,7 @@
         <h1>Temp</h1>
         <h1>Viento</h1>
     </div>
-  </div>
+  </article>
 </template>
 
 <style scoped>
