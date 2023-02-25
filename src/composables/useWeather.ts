@@ -34,7 +34,19 @@ export const useWeather = () => {
             }
         });
 
-        const [ weatherParis, weatherNewYork, weatherSanJose, weatherRioJaneiro  ] = await Promise.all([ parisWeather, newYorkWeather, sanJoseWeather, rioJaneiroWeather ]);
+        const [ 
+            weatherParis, 
+            weatherNewYork, 
+            weatherSanJose, 
+            weatherRioJaneiro  
+        ] = await Promise.all(
+            [ 
+                parisWeather, 
+                newYorkWeather, 
+                sanJoseWeather, 
+                rioJaneiroWeather 
+            ]);
+            
         const weatherParisResponse      =  destructurePromises( weatherParis ); 
         const weatherNewYorkResponse    =  destructurePromises( weatherNewYork ); 
         const weatherSanJoseResponse    =  destructurePromises( weatherSanJose ); 

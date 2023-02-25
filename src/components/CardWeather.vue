@@ -1,7 +1,7 @@
 <script lang="ts" src='./CardWeather.ts'/>
 
 <template>
-  <article class="card card--glass card--weather">
+  <article class="card card--glass card--weather animate__animated animate__fadeIn">
     <div class="card__weather-place">
         <h2>{{ placeName }}</h2>
         <h4>{{ countryName }}</h4>
