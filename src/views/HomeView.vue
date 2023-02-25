@@ -5,10 +5,10 @@
       <button class="header__button">Explore weather</button> 
     </div>
     <div class="wrapper-cards">
-      <CardWeather />
-      <CardWeather />
-      <CardWeather />
-      <CardWeather />
+      <CardWeather/>
+      <CardWeather/>
+      <CardWeather/>
+      <CardWeather/>
     </div>
   </main>
 </template>

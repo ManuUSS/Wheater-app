@@ -13,6 +13,7 @@
         <h1>Precip</h1>
         <h1>Temp</h1>
         <h1>Viento</h1>
+        <h1>{{ s }}</h1>
     </div>
   </article>
 </template>

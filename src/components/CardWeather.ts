@@ -1,11 +1,18 @@
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
+import { useWeather } from '../composables/useWeather';
 
 export default defineComponent({
     name: 'CardWeather',
-    props: {
-        iconUrl: String
-    },
+    props: {},
+    emits: [],
     setup() {
-        console.log('Siu');
+
+        const { defaultWeathers } = useWeather();
+        const s = ref( 5 );
+
+        return {
+            s,
+            defaultWeathers
+        }
     }
 });
