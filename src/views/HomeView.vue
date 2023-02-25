@@ -9,10 +9,13 @@
       :v-if="defaultWeathers.length > 0" 
     >
       <CardWeather 
-        v-for="{ location } in defaultWeathers" 
+        v-for="{ location, current } in defaultWeathers" 
         :key="location.name" 
         :placeName="location.name" 
         :countryName="location.country"
+        :windSpeed="current.wind_kph"
+        :precipMm="current.precip_mm"
+        :humidity="current.humidity"
       />
     </div>
   </main>

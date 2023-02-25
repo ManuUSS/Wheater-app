@@ -5,11 +5,24 @@ export default defineComponent({
     props: {
         countryName: {
             type: String,
-            // required: true
+            required: true
         },
         placeName: {
             type: String,
-            // required: true
+            required: true
+        },
+        humidity: {
+            type: Number,
+            required: true
+        },
+        windSpeed: {
+            type: Number,
+            required: true
+
+        },
+        precipMm: {
+            type: Number,
+            required: true
         }
     },
     emits: [],

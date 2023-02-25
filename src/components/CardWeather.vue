@@ -12,14 +12,15 @@
     <div class="card__weather-timestamp">
         <div class="card__weather_timestamp-section">
             <i class="fa-solid fa-droplet"></i>
-            <p>Precip</p>
+            <p>{{ precipMm }}</p>
         </div>
-        <div>
-            <p>Temp</p>
+        <div class="card__weather_timestamp-section">
+            <i class="fa-solid fa-water"></i>
+            <p>{{ humidity }}</p>
         </div>
         <div class="card__weather_timestamp-section">
             <i class="fa-solid fa-wind"></i>
-            <p>Viento</p>
+            <p>{{ windSpeed }} kph</p>
         </div>
     </div>
   </article>
@@ -46,6 +47,10 @@
         flex-direction: row;
         gap: 15px;   
         user-select: none; 
+    }
+
+    .card__weather-timestamp-temperature {
+        font-size: 25px;
     }
 
     .card__weather_timestamp-section {
