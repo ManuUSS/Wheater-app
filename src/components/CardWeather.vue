@@ -2,9 +2,9 @@
 
 <template>
   <article class="card card--glass card--weather">
-    <div>
-        <h2>{{ countryName }} - {{ placeName }}</h2>
-        <p>Estado del clima</p>
+    <div class="card__weather-place">
+        <h2>{{ placeName }}</h2>
+        <h4>{{ countryName }}</h4>
     </div>
     <div>
         <img src="./icons/rainy.svg" alt="rainy" />
@@ -25,6 +25,12 @@
         flex-direction: column;
         padding: 2rem;
         gap: 0.5rem;
+    }
+
+    .card__weather-place {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .card--weather__timestamp {
