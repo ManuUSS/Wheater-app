@@ -3,7 +3,7 @@
 <template>
   <article class="card card--glass card--weather">
     <div>
-        <h4>Nombre del lugar</h4>
+        <h2>{{ countryName }} - {{ placeName }}</h2>
         <p>Estado del clima</p>
     </div>
     <div>
@@ -13,7 +13,6 @@
         <h1>Precip</h1>
         <h1>Temp</h1>
         <h1>Viento</h1>
-        <h1>{{ s }}</h1>
     </div>
   </article>
 </template>

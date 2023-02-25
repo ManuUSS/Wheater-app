@@ -4,11 +4,16 @@
       <h1>Manu's Weather App</h1>
       <button class="header__button">Explore weather</button> 
     </div>
-    <div class="wrapper-cards">
-      <CardWeather/>
-      <CardWeather/>
-      <CardWeather/>
-      <CardWeather/>
+    <div 
+      class="wrapper-cards"
+      :v-if="defaultWeathers.length > 0" 
+    >
+      <CardWeather 
+        v-for="{ location } in defaultWeathers" 
+        :key="location.name" 
+        placeName="loc" 
+        countryName="Mundo"
+      />
     </div>
   </main>
 </template>
@@ -26,6 +31,12 @@ export default defineComponent({
   },
   setup () {
     const { defaultWeathers } = useWeather();
+    console.log('---------------');
+    console.log( defaultWeathers );
+    console.log('---------------');
+    return {
+      defaultWeathers
+    }
   }
 });
 </script>

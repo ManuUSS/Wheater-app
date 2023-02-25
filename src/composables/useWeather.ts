@@ -46,7 +46,7 @@ export const useWeather = () => {
             weatherSanJoseResponse, 
             weatherRioJaneiroResponse 
         ];
-
+        console.log(defaultWeathers.value);
     }
 
     getWeather();
