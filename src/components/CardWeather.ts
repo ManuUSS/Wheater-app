@@ -20,10 +20,22 @@ export default defineComponent({
             required: true
 
         },
+        windDirection: {
+            type: String,
+            required: true
+        },
         precipMm: {
             type: Number,
             required: true
-        }
+        },
+        temperatureCelcius: {
+            type: Number,
+            required: true
+        },
+        temperatureFarenheit: {
+            type: Number,
+            required: true
+        },
     },
     emits: [],
     setup( props ) {

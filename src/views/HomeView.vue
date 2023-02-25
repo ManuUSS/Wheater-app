@@ -14,8 +14,11 @@
         :placeName="location.name" 
         :countryName="location.country"
         :windSpeed="current.wind_kph"
+        :windDirection="current.wind_dir"
         :precipMm="current.precip_mm"
         :humidity="current.humidity"
+        :temperatureCelcius="current.temp_c"
+        :temperatureFarenheit="current.temp_f"
       />
     </div>
   </main>
@@ -83,6 +86,7 @@ export default defineComponent({
     align-items: center;
     justify-content: center;
     gap: 32px;
+    flex-wrap: wrap;
   }
 
 </style>
