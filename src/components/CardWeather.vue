@@ -9,10 +9,18 @@
     <div>
         <img src="./icons/rainy.svg" alt="rainy" />
     </div>
-    <div class="card--weather__timestamp">
-        <h1>Precip</h1>
-        <h1>Temp</h1>
-        <h1>Viento</h1>
+    <div class="card__weather-timestamp">
+        <div class="card__weather_timestamp-section">
+            <i class="fa-solid fa-droplet"></i>
+            <p>Precip</p>
+        </div>
+        <div>
+            <p>Temp</p>
+        </div>
+        <div class="card__weather_timestamp-section">
+            <i class="fa-solid fa-wind"></i>
+            <p>Viento</p>
+        </div>
     </div>
   </article>
 </template>
@@ -33,9 +41,16 @@
         align-items: center;
     }
 
-    .card--weather__timestamp {
+    .card__weather-timestamp {
         display: flex;
         flex-direction: row;
-        gap: 4px;    
+        gap: 15px;   
+        user-select: none; 
+    }
+
+    .card__weather_timestamp-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 </style>
