@@ -15,6 +15,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { useWeather } from '@/composables/useWeather';
 import CardWeather from '@/components/CardWeather.vue';
 
 
@@ -22,6 +23,9 @@ export default defineComponent({
   name: 'HomeView',
   components: {
     CardWeather
+  },
+  setup () {
+    const { defaultWeathers } = useWeather();
   }
 });
 </script>

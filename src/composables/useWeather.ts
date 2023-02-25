@@ -1,4 +1,5 @@
 import { WeatherResponse } from '@/interfaces/weather';
+import { destructurePromises } from '@/utils';
 import { ref } from 'vue';
 import { weatherApi } from '../api/weatherApi';
 
@@ -34,15 +35,18 @@ export const useWeather = () => {
         });
 
         const [ weatherParis, weatherNewYork, weatherSanJose, weatherRioJaneiro  ] = await Promise.all([ parisWeather, newYorkWeather, sanJoseWeather, rioJaneiroWeather ]);
-        const { data: weatherParisResponse } = weatherParis; 
-        const { data: weatherNewYorkResponse } = weatherNewYork; 
-        const { data: weatherSanJoseResponse } = weatherSanJose; 
-        const { data: weatherRioJaneiroResponse } = weatherRioJaneiro; 
-        
-        console.log({ weatherParisResponse });
-        console.log({ weatherNewYorkResponse });
-        console.log({ weatherSanJoseResponse });
-        console.log({ weatherRioJaneiroResponse });
+        const weatherParisResponse      =  destructurePromises( weatherParis ); 
+        const weatherNewYorkResponse    =  destructurePromises( weatherNewYork ); 
+        const weatherSanJoseResponse    =  destructurePromises( weatherSanJose ); 
+        const weatherRioJaneiroResponse =  destructurePromises( weatherRioJaneiro ); 
+
+        defaultWeathers.value = [ 
+            weatherParisResponse, 
+            weatherNewYorkResponse, 
+            weatherSanJoseResponse, 
+            weatherRioJaneiroResponse 
+        ];
+
     }
 
     getWeather();
