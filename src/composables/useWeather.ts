@@ -24,7 +24,7 @@ export const useWeather = () => {
         
         const sanJoseWeather = weatherApi.get<WeatherResponse>('/current.json', {
             params: {
-                q: 'San José'
+                q: 'Costa Rica'
             }
         });
         

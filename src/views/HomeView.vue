@@ -11,8 +11,8 @@
       <CardWeather 
         v-for="{ location } in defaultWeathers" 
         :key="location.name" 
-        placeName="loc" 
-        countryName="Mundo"
+        :placeName="location.name" 
+        :countryName="location.country"
       />
     </div>
   </main>
