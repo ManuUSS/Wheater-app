@@ -36,11 +36,9 @@ export default defineComponent({
             type: Number,
             required: true
         },
-    },
-    emits: [],
-    setup( props ) {
-
-        return {
+        icon: {
+            type: String,
+            required: true
         }
     }
 });

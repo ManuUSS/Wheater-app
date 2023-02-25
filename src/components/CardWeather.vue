@@ -7,7 +7,7 @@
         <h4>{{ countryName }}</h4>
     </div>
     <div>
-        <img src="./icons/rainy.svg" alt="rainy" />
+        <img :src="icon" alt="Nose" width="65" />
     </div>
     <div class="card__weather-timestamp">
         <div class="card__weather_timestamp-section">

@@ -19,6 +19,7 @@
         :humidity="current.humidity"
         :temperatureCelcius="current.temp_c"
         :temperatureFarenheit="current.temp_f"
+        :icon="current.condition.icon"
       />
     </div>
   </main>
