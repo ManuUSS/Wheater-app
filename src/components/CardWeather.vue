@@ -56,14 +56,14 @@
 
     .card--weather::before {
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
         content: "";
         height: 20%;
         z-index: -1;
         width: 100%;
-        clip-path: polygon(10%, 50%, 0, 100%, 100%, 100%);
-        background-color: rgba(119, 183, 255, 0.404);
+        background: linear-gradient(90deg, rgba(255,255,255,.2) 0%, rgba(160,195,227, .2) 100%);
+        border-radius: 0 0 50% 50%/0 0 100% 100%;
         transition: all .3s ease-out;
     }
 
