@@ -3,23 +3,35 @@
     <div class="header-main">
       <h1>Manu's Weather App</h1>
     </div>
-    <div 
-      class="wrapper-cards"
-      :v-if="defaultWeathers.length > 0" 
-    >
-      <CardWeather 
-        v-for="{ location, current } in defaultWeathers" 
-        :key="location.name" 
-        :placeName="location.name" 
-        :countryName="location.country"
-        :windSpeed="current.wind_kph"
-        :windDirection="current.wind_dir"
-        :precipMm="current.precip_mm"
-        :humidity="current.humidity"
-        :temperatureCelcius="current.temp_c"
-        :temperatureFarenheit="current.temp_f"
-        :icon="current.condition.icon"
-      />
+    <div class="weather-body">
+      <form action="">
+        <input 
+          class="input-weather"
+          type="text" 
+          placeholder="Search a zone"
+        />
+        <input 
+          type="submit" 
+        />
+      </form>
+      <div 
+        class="wrapper-cards"
+        :v-if="defaultWeathers.length > 0" 
+      >
+        <CardWeather 
+          v-for="{ location, current } in defaultWeathers" 
+          :key="location.name" 
+          :placeName="location.name" 
+          :countryName="location.country"
+          :windSpeed="current.wind_kph"
+          :windDirection="current.wind_dir"
+          :precipMm="current.precip_mm"
+          :humidity="current.humidity"
+          :temperatureCelcius="current.temp_c"
+          :temperatureFarenheit="current.temp_f"
+          :icon="current.condition.icon"
+        />
+    </div>
     </div>
   </main>
 </template>
@@ -82,12 +94,25 @@ export default defineComponent({
     justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
-    flex-grow: 1;
+    
   }
 
   .weather-wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .weather-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-grow: 1;
+  }
+  
+  .input-weather {
+    
   }
 
 </style>
