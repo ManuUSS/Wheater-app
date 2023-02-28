@@ -2,7 +2,6 @@
   <main>
     <div class="header-main">
       <h1>Manu's Weather App</h1>
-      <button class="header__button">Explore weather</button> 
     </div>
     <div 
       class="wrapper-cards"
@@ -38,9 +37,6 @@ export default defineComponent({
   },
   setup () {
     const { defaultWeathers } = useWeather();
-    console.log('---------------');
-    console.log( defaultWeathers );
-    console.log('---------------');
     return {
       defaultWeathers
     }
@@ -58,8 +54,6 @@ export default defineComponent({
 
   .header-main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0.9375rem 1.125rem;
   }
 
