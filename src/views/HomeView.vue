@@ -2,6 +2,7 @@
   <main class="weather-wrapper">
     <div class="header-main">
       <h1>Manu's Weather App</h1>
+      <ToggleMode />
     </div>
     <div class="weather-body">
       <form>
@@ -43,12 +44,14 @@
 import { defineComponent } from 'vue';
 import { useWeather } from '@/composables/useWeather';
 import CardWeather from '@/components/CardWeather.vue';
+import ToggleMode from '@/components/ToggleMode.vue';
 
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    CardWeather
+    CardWeather,
+    ToggleMode
   },
   setup () {
     const { defaultWeathers } = useWeather();
@@ -69,6 +72,8 @@ export default defineComponent({
 
   .header-main {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.9375rem 1.125rem;
   }
 
