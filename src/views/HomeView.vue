@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="weather-wrapper">
     <div class="header-main">
       <h1>Manu's Weather App</h1>
     </div>
@@ -82,6 +82,12 @@ export default defineComponent({
     justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .weather-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
 </style>
