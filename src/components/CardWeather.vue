@@ -50,6 +50,21 @@
         padding: 2rem;
         gap: 0.5rem;
         user-select: none; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card--weather::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        height: 20%;
+        z-index: -1;
+        width: 100%;
+        clip-path: polygon(10%, 50%, 0, 100%, 100%, 100%);
+        background-color: rgba(119, 183, 255, 0.404);
+        transition: all .3s ease-out;
     }
 
     .card__weather-place {
