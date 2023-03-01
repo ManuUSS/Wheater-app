@@ -87,7 +87,7 @@
 }
 
 .toggle-switch input:checked ~ .round-button {
-  transform: translateX(calc(11em - 95%));
+  transform: translateX(calc(1.75em));
 }
 
 .toggle-switch input:checked ~ .round-button .button-body {
