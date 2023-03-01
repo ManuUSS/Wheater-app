@@ -15,10 +15,10 @@
   position: relative;
   width: 3em;
   height: 1.3em;
-  background-image: linear-gradient(90deg, #161e54 50%, skyblue 50%);
   background-size: 200% 100%;
   background-position: 100% 100%;
   box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1) inset;
+  background-color: #67d3af;
   padding: 0;
   border-radius: 2.5em;
   display: flex;
