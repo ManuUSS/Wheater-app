@@ -18,7 +18,7 @@
   background-size: 200% 100%;
   background-position: 100% 100%;
   box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1) inset;
-  background-color: #67d3af;
+  background-color: #67b1d3;
   padding: 0;
   border-radius: 2.5em;
   display: flex;
